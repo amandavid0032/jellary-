@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+
+:root {
+	--jw-maroon: #8B2346;
+	--jw-maroon-dark: #6B1A36;
+	--jw-gold: #C9A24A;
+	--jw-cream: #FBF6F1;
+	--jw-blush: #F4E6DF;
+	--jw-text: #2A2422;
+	--jw-muted: #7A6E6A;
+	--jw-line: #EFE3DA;
+}
+
+body { font-family: 'Jost', sans-serif; color: var(--jw-text); }
+h1, h2, h3, h4, .site-title, .woocommerce-loop-product__title, .product_title { font-family: 'Playfair Display', serif; }
+
+/* ---------- Header ---------- */
+.ast-above-header-bar { background: var(--jw-maroon) !important; color: #fff; }
+.ast-above-header-bar p { margin: 0; font-size: 13px; letter-spacing: .04em; color: #fff; }
+.ast-primary-header-bar { border-bottom: 1px solid var(--jw-line); }
+.site-title a, .site-title a:hover { color: var(--jw-maroon) !important; font-size: 30px; font-weight: 600; letter-spacing: .01em; }
+.ast-below-header-bar { background: #fff !important; border-bottom: 1px solid var(--jw-line); }
+.ast-below-header-bar .menu-link { text-transform: uppercase; font-size: 13.5px; letter-spacing: .08em; font-weight: 500; color: var(--jw-text) !important; }
+.ast-below-header-bar .menu-link:hover { color: var(--jw-maroon) !important; }
+.jw-menu-sale > .menu-link { color: #C62828 !important; font-weight: 600 !important; }
+.ast-header-search .search-field { border: 1px solid var(--jw-line); border-radius: 30px; padding: 8px 16px; min-width: 260px; background: var(--jw-cream); }
+
+/* ---------- Homepage ---------- */
+.home .entry-content > * { max-width: 1280px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
+.home .entry-content > .alignfull { max-width: none; padding: 0; }
+.jw-hero, .jw-hero img { margin: 0 !important; width: 100%; display: block; }
+.jw-section-title { margin: 56px auto 28px !important; font-size: clamp(24px, 3vw, 34px); position: relative; }
+.jw-section-title::after { content: ''; display: block; width: 60px; height: 2px; background: var(--jw-gold); margin: 12px auto 0; }
+
+.jw-usp { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-bottom: 1px solid var(--jw-line); padding-top: 18px !important; padding-bottom: 18px !important; }
+.jw-usp > div { text-align: center; padding: 6px 10px; border-right: 1px solid var(--jw-line); }
+.jw-usp > div:last-child { border-right: 0; }
+.jw-usp strong { display: block; font-size: 15px; color: var(--jw-maroon); }
+.jw-usp span { font-size: 13px; color: var(--jw-muted); }
+
+.jw-cats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 24px; }
+.jw-cat { text-align: center; text-decoration: none !important; color: var(--jw-text); }
+.jw-cat__img { display: block; aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 2px solid var(--jw-line); transition: border-color .2s, transform .2s; }
+.jw-cat__img img { width: 100%; height: 100%; object-fit: cover; }
+.jw-cat:hover .jw-cat__img { border-color: var(--jw-gold); transform: translateY(-3px); }
+.jw-cat__name { display: block; margin-top: 10px; font-weight: 500; }
+
+.jw-banner2 { margin-top: 56px !important; }
+.jw-banner2 img { border-radius: 8px; }
+
+.jw-newsletter { background: var(--jw-blush); text-align: center; padding: 48px 20px !important; margin-top: 64px !important; border-radius: 8px; }
+.jw-newsletter h3 { margin-bottom: 6px; }
+
+/* ---------- Product cards ---------- */
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product { text-align: center; }
+.woocommerce ul.products li.product .astra-shop-thumbnail-wrap { border-radius: 6px; overflow: hidden; background: var(--jw-cream); }
+.woocommerce ul.products li.product .woocommerce-loop-product__title { font-size: 15px !important; font-weight: 500; color: var(--jw-text); }
+.woocommerce ul.products li.product .price { color: var(--jw-maroon) !important; font-weight: 600; font-size: 16px !important; }
+.woocommerce ul.products li.product .price del { color: var(--jw-muted) !important; font-weight: 400; font-size: 14px; margin-right: 4px; }
+.woocommerce ul.products li.product .price ins { text-decoration: none; }
+.woocommerce span.onsale, .woocommerce .ast-onsale-card { background: var(--jw-maroon) !important; color: #fff !important; border-radius: 3px !important; font-size: 12px !important; font-weight: 600; min-height: 0 !important; line-height: 1 !important; padding: 6px 8px !important; }
+.star-rating, .woocommerce .star-rating span::before { color: #E0A82E !important; }
+
+/* Buttons */
+.woocommerce a.button, .woocommerce button.button, .woocommerce .single_add_to_cart_button, .wp-element-button, .ast-button {
+	background: var(--jw-maroon) !important; color: #fff !important; border-radius: 4px !important; border: 0 !important;
+	text-transform: uppercase; letter-spacing: .06em; font-weight: 500;
+}
+.woocommerce a.button:hover, .woocommerce button.button:hover, .wp-element-button:hover { background: var(--jw-maroon-dark) !important; }
+.is-style-outline .wp-element-button { background: transparent !important; color: var(--jw-maroon) !important; border: 1px solid var(--jw-maroon) !important; }
+
+/* ---------- Shop sidebar filters ---------- */
+#secondary .widget-title { font-family: 'Jost', sans-serif; text-transform: uppercase; font-size: 14px; letter-spacing: .08em; border-bottom: 1px solid var(--jw-line); padding-bottom: 8px; }
+#secondary .widget ul li { font-size: 14px; }
+.price_slider_wrapper .ui-slider .ui-slider-range, .price_slider_wrapper .ui-slider .ui-slider-handle { background: var(--jw-maroon) !important; }
+
+/* ---------- Single product ---------- */
+.single-product .product_title { font-size: 30px; }
+.single-product div.product p.price { color: var(--jw-maroon) !important; font-size: 24px !important; font-weight: 600; }
+.single-product div.product p.price del { color: var(--jw-muted) !important; font-size: 18px; }
+.single-product .woocommerce-product-details__short-description ul { list-style: none; margin-left: 0; }
+.single-product .woocommerce-product-details__short-description li::before { content: '✓ '; color: var(--jw-gold); font-weight: 700; }
+
+/* ---------- Footer ---------- */
+.site-primary-footer-wrap { background: #2A2422 !important; color: #d9cfcb; padding-top: 50px; padding-bottom: 30px; }
+.site-primary-footer-wrap .widget-title { color: #fff !important; font-size: 16px; }
+.site-primary-footer-wrap a { color: #d9cfcb !important; }
+.site-primary-footer-wrap a:hover { color: var(--jw-gold) !important; }
+.site-primary-footer-wrap ul { list-style: none; margin: 0; }
+.site-primary-footer-wrap li { margin-bottom: 8px; }
+.site-below-footer-wrap { background: #1E1B1A !important; color: #a99e9a; font-size: 13px; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 921px) {
+	.jw-cats { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+	.jw-usp { grid-template-columns: repeat(2, 1fr); }
+	.jw-usp > div:nth-child(2) { border-right: 0; }
+}
+@media (max-width: 544px) {
+	.jw-cats { display: flex; overflow-x: auto; gap: 14px; scroll-snap-type: x mandatory; }
+	.jw-cat { flex: 0 0 26%; scroll-snap-align: start; }
+	.jw-cat__name { font-size: 13px; }
+	.ast-above-header-bar p { font-size: 11px; }
+}
+
+/* ---------- Wishlist heart on cards (icon only, top-right) ---------- */
+ul.products li.product .tinv-wraper.tinvwl-above_thumb-add-to-cart { position: absolute; top: 10px; right: 10px; left: auto; z-index: 5; margin: 0; }
+ul.products li.product .tinvwl_add_to_wishlist-text { display: none; }
+ul.products li.product .tinvwl_add_to_wishlist_button { background: #fff; border-radius: 50%; width: 34px; height: 34px; display: flex !important; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+ul.products li.product .tinvwl_add_to_wishlist_button::before { margin: 0 !important; color: var(--jw-maroon); }
+.woocommerce ul.products li.product span.onsale { left: 10px; right: auto; top: 10px; }
+
+/* ---------- Product page extras ---------- */
+.jw-save { color: #2E7D32; font-size: 13px; font-weight: 500; }
+.jw-trust { list-style: none; margin: 18px 0 0; padding: 14px 16px; background: var(--jw-cream); border: 1px solid var(--jw-line); border-radius: 6px; font-size: 14px; }
+.jw-trust li { margin: 4px 0; }
+
+/* Hide Astra's duplicate "Sale!" card label (we show % OFF) */
+.ast-onsale-card { display: none !important; }
+ul.products li.product .button { font-size: 12.5px !important; padding: 11px 14px !important; white-space: nowrap; }
+.jw-save { display: block; margin-top: 4px; }
+.single-product p.price .jw-save { font-size: 14px; color: #2E7D32; font-weight: 500; }
+@media (max-width: 544px) { .site-title a { font-size: 22px !important; } }
